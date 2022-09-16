@@ -1,0 +1,556 @@
+@font-face {
+    font-family: 'boink';
+    src: url('../fonts/boink.otf');
+    font-display: swap;
+}
+
+body {
+    /* Other */
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* BACKGROUND */
+#container {
+    /* Display & Box Model */
+    overflow: hidden;
+}
+
+.sliding-background {
+    /* Positioning */
+    position: fixed;
+    
+    /* Display & Box Model */
+    width: 8188px;
+    height: 1623px;
+    padding: 20px;
+    
+    /* Other */
+    background: url('../images/bg.webp') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* HEADER AND FOOTER */
+header, 
+footer {
+    /* Positioning */
+    position: fixed;
+    z-index: 2;
+    
+    /* Display & Box Model */
+    width: 100%;
+    
+    /* Other */
+    background-color: rgba(102,102,102,0.3);
+    opacity: 0;
+    box-shadow: black 4px -4px 40px;
+    text-align: center;
+}
+
+header h1 {
+    /* Positioning */
+    float: left;
+    
+    /* Display & Box Model */
+    margin: 10px 16px;
+    
+    /* Other */
+    font-family: boink, Arial, sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 
+        -1px -1px 1px #fff, 
+        1px 1px 1px #000, 
+        1px 1px 3px #000;
+}
+
+#pink {
+    color: #f68e95;
+}
+
+#green {
+    color: #00964e;
+}
+
+h1 > span > span:nth-child(odd) {
+    /* Display & Box Model */
+    display: inline-block;
+    
+    /* Other */
+    transform: rotate(-5deg);
+}
+
+h1 > span > span:nth-child(even) {
+    /* Display & Box Model */
+    display: inline-block;
+    
+    /* Other */
+    transform: rotate(5deg);
+}
+
+/* HEADER AND FOOTER - NAVIGATION */
+nav ul {
+    /* Display & Box Model */
+    padding: 0;
+    margin: 0;
+    
+    /* Other */
+    list-style-type: none;
+}
+
+header ul li {
+    /* Positioning */
+    float: right;
+}
+
+a {
+    /* Display & Box Model */
+    display: block;
+    width: fit-content;
+    
+    /* Other */
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a {
+    /* Display & Box Model */
+    padding: 20px 16px;
+    
+    /* Other */
+    font-style: italic;
+    text-shadow: 
+        -1px -1px 1px #fff, 
+        -2px -2px 1px #000, 
+        3px 3px 3px #000;
+}
+
+nav a:link, 
+nav a:visited {
+    /* Other */
+    color: #fff;
+}
+
+nav a:hover, 
+nav a.current {
+    /* Other */
+    background-color: rgba(0,0,0,0.3);
+    font-weight: bold;
+    text-decoration: underline dashed;
+    text-shadow: 0px 5px 5px #000;
+}
+
+nav a.current, 
+nav a:active {
+    /* Other */
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* MAIN CONTENT */
+.content, 
+hgroup {
+    /* Positioning */
+    position: absolute;
+    top: 150px;
+    
+    /* Display & Box Model */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+}
+
+/* MAIN CONTENT - HOME PAGE */
+hgroup {    
+    /* Positioning */
+    position: fixed;
+    top: 50%;
+    height: 0;
+    /* Other */
+    color: #000;
+    font-size: 2em;
+    font-style: italic;
+    text-shadow: 
+        -1px -1px 1px #fff,
+        -2px -2px 1px #000,
+        1px 1px 3px #000;
+}
+
+hgroup h1 {
+    /* Display & Box Model */
+    margin: 0 0 30px;
+    
+    /* Other */
+    opacity: 0;
+    font-family: boink, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+hgroup h2 {
+    /* Display & Box Model */
+    margin: 0;
+    
+    /* Other */
+    opacity: 0;
+    text-transform: capitalize;
+}
+
+/* MAIN CONTENT - OTHER PAGES */
+section {
+    /* Display & Box Model */
+    width: 50%;
+    padding: 0 50px;
+    margin-bottom: 150px;
+    
+    /* Other */
+    background-image: url('../images/paper.webp');
+    color: #000;
+    opacity: 0;
+    text-align: justify;
+}
+
+section h1,
+section h2 {
+    /* Display & Box Model */
+    overflow: auto;
+    width: fit-content;
+    margin: 0;
+    padding: 5px 10px;
+    
+    /* Other */
+    background-color: #000;
+    color: #fff;
+    box-shadow: 5px 5px 5px #ccc;
+    text-transform: uppercase;
+}
+
+section h1 {
+    /* Positioning */
+    position: relative;
+    top: -30px;
+    left: -70px;
+    
+    /* Other */
+    box-shadow: none;
+    font-style: italic;
+    transform: rotate(-2deg);
+}
+
+section p {
+    /* Display & Box Model */
+    margin: 20px 0;
+    
+    /* Other */
+    word-wrap: normal;
+    line-height: 1.8em;
+    font-size: 1.3em;
+    text-shadow: 
+        -1px -1px 1px #fff,
+        1px 1px 1px #ccc;
+}
+
+/* MAIN CONTENT - OTHER PAGES - ABOUT PAGE */
+p a {
+    /* Display & Box Model */
+    display: inline;
+    padding: 1px;
+    
+    /* Other */
+    background-color: #000;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+p a:link,
+p a:visited {
+    /* Other */
+    color: #fff;
+}
+
+p a:hover {
+    /* Other */
+    background-color: transparent;
+    color: #000;
+}
+
+p a:active {
+    /* Positioning */
+    position: relative;
+    top: 1px;
+}
+
+img {
+    /* Positioning */
+    position: relative;
+    
+    /* Display & Box Model */
+    box-sizing: border-box;
+    
+    /* Display & Box Model */
+    border: solid 10px #fff;
+    margin: 30px;
+    max-width: 100%;
+        height: auto;
+}
+
+.right {
+    /* Positioning */
+    float: right;
+    left: 90px;
+    
+    /* Other */
+    box-shadow: 0px 5px 5px #ccc;
+    transform: rotate(5deg);
+}
+
+.left {
+    /* Positioning */
+    float: left;
+    left: -90px;
+    
+    /* Other */
+    box-shadow: 5px 5px 5px #ccc;
+    transform: rotate(-5deg);
+}
+
+/* MAIN CONTENT - OTHER PAGES - PROJECTS PAGE */
+.no-overhang {
+    /* Positioning */
+    left: 0;
+    
+    /* Other */
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+#accordion {
+    /* Display & Box Model */
+    margin: 20px 0;
+    
+    /* Other */
+    word-wrap: break-word;
+}
+
+#accordion h2 {
+    /* Display & Box Model */
+    width: 100%;
+    padding: 5px 10px;
+    border: solid 1px #000;
+    box-sizing: border-box;
+    margin: 1px 0;
+}
+
+#accordion h2:hover {
+    /* Other */
+    background-color: #666;
+    cursor: pointer;
+}
+
+#accordion div {
+    /* Display & Box Model */
+    width: 100%;
+    padding: 0 10px;
+    border: solid 1px #000;
+    box-sizing: border-box;
+    margin: -1px 0;
+}
+
+#accordion p {
+    /* Display & Box Model */
+    padding: 0 20px;
+}
+
+#accordion a,
+button {
+    /* Display & Box Model */
+    overflow: auto;
+    padding: 5px;
+    border: solid 1px #000;
+    border-radius: 5px;
+    
+    /* Other */
+    background-color: #000;
+    color: #fff;
+    box-shadow: 5px 5px 5px #ccc;
+    font-weight: bold;
+}
+
+#accordion a {
+    /* Display & Box Model */
+    margin: 20px;
+}
+
+#accordion a:hover,
+button:hover {
+    /* Other */
+    background-color: #666;
+}
+
+#accordion a:active,
+button:active {
+    /* Positioning */
+    position: relative;
+    top: 2px;
+    left: 2px;
+    
+    /* Other */
+}
+
+/* MAIN CONTENT - OTHER PAGES - CONTACT PAGE */
+form div {
+    /* Display & Box Model */
+    margin-bottom: 30px;
+}
+
+label {
+    /* Other */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 
+        -1px -1px 1px #fff,
+        1px 1px 1px #ccc;
+}
+
+input,
+textarea {
+    /* Display & Box Model */
+    width: 100%;
+    padding: 5px;
+    border: dashed 2px black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0;
+    
+    /* Other */
+    background-color: transparent;
+}
+
+textarea {
+    /* Display & Box Model */
+    min-width: 100%;
+    max-width: 100%;
+    height: 200px;
+    min-height: 20px;
+}
+
+input:hover,
+textarea:hover,
+.required {
+    /* Other */
+    background-color: rgba(102,102,102,0.1);
+}
+
+::placeholder {
+    /* Other */
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+form small {
+    /* Display & Box Model */
+    display: none;
+    
+    /* Other */
+    font-weight: bold;
+    font-variant: small-caps;
+    text-shadow: 
+        -1px -1px 1px #fff,
+        1px 1px 1px #ccc;
+}
+
+#submit {
+    /* Other */
+    text-align: right;
+}
+
+.disabled {
+    /* Other */
+    background-color: #666;
+    box-shadow: 
+        -1px -1px 1px #fff,
+        1px 1px 1px #000;
+    cursor: not-allowed;
+}
+
+.disabled:hover {
+    /* Positioning */
+    top: 0;
+    left: 0;
+    
+    /*Other */
+    box-shadow: 
+        -1px -1px 1px #fff,
+        1px 1px 1px #000;
+}
+
+
+/* FOOTER */
+footer {
+    /* Positioning */
+    bottom: 0;
+    
+    /* Other */
+    box-shadow: 4px 4px 40px #000;
+}
+
+footer ul li {
+    /* Display & Box Model */
+    display: inline-block;
+}
+
+/* JAVASCRIPT DISABLED FIXES */
+.nojs header,
+.nojs footer,
+.nojs hgroup h1,
+.nojs hgroup h2,
+.nojs section {
+    /* Other */
+    opacity: 100; /* Reveal all hidden elements if JavaScript is disabled */
+}
+
+.nojs form small {
+    /* Display & Box Model */
+    display: block;
+}
+
+@media screen and (max-width: 920px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header h1, header nav ul {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    body {
+        font-size: 10px;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 20px
+    }
+
+    
+    p {
+        text-align: left;
+    }
+    
+    .no-overhang {
+        float: none;
+        margin: 30px auto;
+    }
+}
