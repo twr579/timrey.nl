@@ -14,8 +14,7 @@
                     <p>
                         Mit dem Zug (German for "by train") is a website created with React and Redux and deployed to Google Cloud via Docker. I'm interested in German language and culture, so I wanted to learn more about the German railway system and get some concrete language practice by deploying my first website in German. However, websites telling travelers in Germany how to get from Point A to Point B by train already abound (just look at Google Maps!). I wanted to implement a unique idea that appeals to the spontaneous traveler. Hence, mit dem Zug. Simply search for a train station in Germany and input a time limit (in hours in minutes), and the site makes a series of API calls within an algorithm to find all stations reachable within the given time. The results section includes the name and photo of each station, the trip length, and further details about the trains and transfers required to get there.
                     </p>
-                    <a href="//mit-dem-zug-sxinc232ga-uc.a.run.app/">check out the site</a>
-                    <a href="//mit-dem-zug-de-uuc3zyggfa-uc.a.run.app">guck die Webseite mal</a>
+                    <a href="//mitdemzug.com/">check out the site</a>
                     <a href="//github.com/twr579/mit-dem-zug">view source code</a>
                     
                 </div>
