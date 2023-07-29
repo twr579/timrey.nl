@@ -52,7 +52,6 @@
                 </h1>
                 <nav>
                     <ul>
-                        <li><a href="/contact.php">contact</a></li>
                         <li><a href="/projects.php">projects</a></li>
                         <li><a href="/about.php">about</a></li>
                         <li><a href="/">home</a></li>
