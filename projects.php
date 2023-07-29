@@ -8,13 +8,34 @@
                 <div>
                     <p>A personal website created with HTML, CSS, jQuery, and PHP. You're looking at it right now!</p>
                 </div>
+                <h2>> mit dem Zug</h2>
+                <div>
+                    <img class="right no-overhang" src="images/mitdemzug.webp" alt="The results section of mit dem Zug" width="353" height="188" />
+                    <p>
+                        Mit dem Zug (German for "by train") is a website created with React and Redux and deployed to Google Cloud via Docker. I'm interested in German language and culture, so I wanted to learn more about the German railway system and get some concrete language practice by deploying my first website in German. However, websites telling travelers in Germany how to get from Point A to Point B by train already abound (just look at Google Maps!). I wanted to implement a unique idea that appeals to the spontaneous traveler. Hence, mit dem Zug. Simply search for a train station in Germany and input a time limit (in hours in minutes), and the site makes a series of API calls within an algorithm to find all stations reachable within the given time. The results section includes the name and photo of each station, the trip length, and further details about the trains and transfers required to get there.
+                    </p>
+                    <a href="//mit-dem-zug-sxinc232ga-uc.a.run.app/">check out the site</a>
+                    <a href="//mit-dem-zug-de-uuc3zyggfa-uc.a.run.app">guck die Webseite mal</a>
+                    <a href="//github.com/twr579/mit-dem-zug">view source code</a>
+                    
+                </div>
                 <h2>> Feedback Friend</h2>
                 <div>
-                    <img class="right no-overhang" src="images/feedback-friend.webp" alt="A form allowing users to create a survey by adding free-response and multiple choice questions." width="384" height="208" />
+                    <img class="left no-overhang" src="images/feedbackfriend.webp" alt="A form allowing users to create a survey by adding free-response and multiple choice questions." width="367" height="184" />
                     <p>
-                        A survey creation and distribution software sponsored by Oracle. My team spent fall 2022 planning the application's basic design and features, determining team roles, and laying out a roadmap for development. We will begin coding in the spring. As a member of the frontend team, I developed a prototype in React.js for creating, taking, and viewing the results of surveys.
+                        A survey creation and distribution software sponsored by Oracle. My team spent spring 2022 planning the application's basic design and features, determining team roles, and laying out a roadmap for development. In the fall, we began coding. As a member of the frontend team, my responsibilities included creating a dashboard page, a survey creation page, and a page to take the survey, and assisting on a page to display aggregate results. The survey creation page allows the user to create surveys from scratch or from existing templates. They can change the survey name, add, edit, and delete free-response and multiple choice questions, including a drag-and-drop feature to change question order, preview the created survey, and select a list of contacts to which to email a link to the survey. All changes are autosaved. On the dashboard page, users can see all their draft, active, and completed surveys. From here, any survey can be deleted, drafts can be edited, active surveys can be toggled to completed to prevent further responses, and buttons on active and completed surveys redirect the user to the results page for that survey. The page for taking a survey is straightforward, with the addition of an input field before the survey loads prompting the recipient to enter their email for verification. I was also active in assisting with the creation of the SQL schema, documenting required API calls, and creating and debugging Flask functions.
                     </p>
+                    <a href="//feedbackfriend.ennissalam.com/">check out the site</a>
                     <a href="//github.com/twr579/Feedback-Friend-Prototype">view source code</a>
+                </div>
+                <h2>> timtreks.com</h2>
+                <div>
+                    <img class="right no-overhang" src="images/timtreks.webp" alt="The cover of the timtreks.com website. A green hill dominates the background. White text reading 'Tim Treks, hiking the Hill Country since 2021' lies over it, with a button below saying 'Read my Blog'" width="380" height="218" />
+                    <p>
+                        A dynamic, single-page hiking blog made with HTML, CSS, Bootstrap, jQuery, AngularJS, PHP, and SQL. Read about my hiking adventures at state parks throughout the Texas Hill Country. Look at pictures I've taken and trail maps for each park. Sort articles by recency or rating. See where I've been on a simple Esri ArcGIS web map.
+                    </p>
+                    <a href="//timtreks.com/">check out the site</a>
+                    <a href="//github.com/twr579/timtreks.com">view source code</a>
                 </div>
                 <h2>> Resource Manager</h2>
                 <div>
@@ -23,6 +44,13 @@
                     </p>
                     <a href="//ee-461-website.vercel.app/auth/signin">check out the site</a>
                     <a href="//github.com/Software-lab-team/Software_lab">view source code</a>
+                </div>
+                <h2>> Android Weather App</h2>
+                <div>
+                    <p>
+                        A weather app created in Android Studio with Java and a weather API. Features include updates every minute, displaying the current temperature, humidity, wind speed, and pressure, the sunrise and sunset times for the current day, hourly temperatures for the next 12 hours, high and low temperatures for the next week, and a changing background based on whether the weather is rainy, cloudy, or sunny.
+                    </p>
+                    <a href="//github.com/twr579/Android-Weather-App">view source code</a>
                 </div>
                 <h2>> Drum Kit GUI</h2>
                 <div>
